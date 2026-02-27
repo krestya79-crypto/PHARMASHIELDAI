@@ -1,0 +1,140 @@
+{
+  "Paracetamol (Panadol)": {
+    "max_dose_adult": "4000mg",
+    "max_dose_child": "60mg/kg",
+    "interactions": [ "Alcohol", "Warfarin" ],
+    "warning": "Risk of liver damage if exceeded."
+  },
+  "Ibuprofen (Brufen)": {
+    "max_dose_adult": "3200mg",
+    "max_dose_child": "40mg/kg",
+    "interactions": [ "Aspirin", "Warfarin", "Lithium" ],
+    "warning": "Take with food to avoid stomach irritation."
+  },
+  "Warfarin (Coumadin)": {
+    "max_dose_adult": "Varies",
+    "max_dose_child": "N/A",
+    "interactions": [ "Aspirin", "Ibuprofen", "Antibiotics", "Vitamin K" ],
+    "warning": "High risk of bleeding. Regular INR monitoring required."
+  },
+  "Aspirin (Rivo)": {
+    "max_dose_adult": "4000mg",
+    "max_dose_child": "N/A (Reye Syndrome)",
+    "interactions": [ "Warfarin", "NSAIDs", "Alcohol" ],
+    "warning": "Avoid in children under 16."
+  },
+  "Amoxicillin": {
+    "max_dose_adult": "3000mg",
+    "max_dose_child": "50mg/kg",
+    "interactions": [ "Methotrexate", "Warfarin" ],
+    "warning": "Take with food to reduce stomach upset."
+  },
+  "Metronidazole (Flagyl)": {
+    "max_dose_adult": "4000mg",
+    "max_dose_child": "30mg/kg",
+    "interactions": [ "Alcohol", "Warfarin" ],
+    "warning": "Avoid alcohol completely during treatment."
+  },
+  "Atorvastatin (Lipitor)": {
+    "max_dose_adult": "80mg",
+    "max_dose_child": "20mg",
+    "interactions": [ "Grapefruit Juice", "Clarithromycin" ],
+    "warning": "Report any unexplained muscle pain."
+  },
+  "Metformin (Cidophage)": {
+    "max_dose_adult": "2550mg",
+    "max_dose_child": "2000mg",
+    "interactions": [ "Iodinated Contrast", "Alcohol" ],
+    "warning": "Take with meals to avoid GI upset."
+  },
+  "Ciprofloxacin": {
+    "max_dose_adult": "1500mg",
+    "max_dose_child": "N/A",
+    "interactions": [ "Theophylline", "Dairy Products" ],
+    "warning": "Avoid dairy 2 hours before/after dose."
+  },
+  "Azithromycin (Zithrokan)": {
+    "max_dose_adult": "500mg",
+    "max_dose_child": "10mg/kg",
+    "interactions": [ "Antacids", "Digoxin" ],
+    "warning": "Complete the 3 or 5 day course."
+  },
+  "Clopidogrel (Plavix)": {
+    "max_dose_adult": "75mg",
+    "max_dose_child": "N/A",
+    "interactions": [ "Omeprazole", "NSAIDs" ],
+    "warning": "Risk of bleeding. Inform dentist."
+  },
+  "Furosemide (Lasix)": {
+    "max_dose_adult": "600mg",
+    "max_dose_child": "2mg/kg",
+    "interactions": [ "Gentamicin", "Digoxin" ],
+    "warning": "May cause low potassium; eat bananas."
+  },
+  "Simvastatin (Zocor)": {
+    "max_dose_adult": "80mg",
+    "max_dose_child": "40mg",
+    "interactions": [ "Amiodarone", "Verapamil" ],
+    "warning": "Take in the evening."
+  },
+  "Sildenafil (Viagra)": {
+    "max_dose_adult": "100mg",
+    "max_dose_child": "N/A",
+    "interactions": [ "Nitrates", "Ritonavir" ],
+    "warning": "Never use with nitrates (heart meds)."
+  },
+  "Gabapentin (Gaptin)": {
+    "max_dose_adult": "3600mg",
+    "max_dose_child": "50mg/kg",
+    "interactions": [ "Antacids", "Morphine" ],
+    "warning": "May cause dizziness or drowsiness."
+  },
+  "Sertraline (Lustral)": {
+    "max_dose_adult": "200mg",
+    "max_dose_child": "N/A",
+    "interactions": [ "MAOIs", "Tramadol" ],
+    "warning": "Effects may take 2-4 weeks to appear."
+  },
+  "Tramadol": {
+    "max_dose_adult": "400mg",
+    "max_dose_child": "N/A",
+    "interactions": [ "SSRIs", "Benzodiazepines" ],
+    "warning": "Risk of addiction and seizure."
+  },
+  "Ondansetron (Zofran)": {
+    "max_dose_adult": "24mg",
+    "max_dose_child": "0.15mg/kg",
+    "interactions": [ "Tramadol", "Amiodarone" ],
+    "warning": "Used for severe nausea/vomiting."
+  },
+  "Loperamide (Imodium)": {
+    "max_dose_adult": "16mg",
+    "max_dose_child": "N/A",
+    "interactions": [ "Quinidine", "Ritonavir" ],
+    "warning": "Do not exceed dose; risk of heart issues."
+  },
+  "Tamsulosin (Omnic)": {
+    "max_dose_adult": "0.8mg",
+    "max_dose_child": "N/A",
+    "interactions": [ "Warfarin", "Ketoconazole" ],
+    "warning": "Take 30 min after same meal daily."
+  },
+  "Bisacodyl (Dulcolax)": {
+    "max_dose_adult": "15mg",
+    "max_dose_child": "5mg",
+    "interactions": [ "Antacids", "Milk" ],
+    "warning": "Swallow whole; do not take with milk."
+  },
+  "Gliclazide (Diamicron)": {
+    "max_dose_adult": "120mg",
+    "max_dose_child": "N/A",
+    "interactions": [ "NSAIDs", "Alcohol" ],
+    "warning": "Take with breakfast."
+  },
+  "Insulin Glargine (Lantus)": {
+    "max_dose_adult": "Varies",
+    "max_dose_child": "Varies",
+    "interactions": [ "Beta-blockers", "Alcohol" ],
+    "warning": "Inject subcutaneously at same time daily."
+  }
+}

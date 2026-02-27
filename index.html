@@ -1,0 +1,106 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pharma Assistant - Clinical Support System</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+  <div class="bg-grid"></div>
+  <main class="page">
+    <header class="hero card">
+      <div class="logo-emblem" aria-label="Pharma Assistant Brand">
+        <div class="logo-ring">
+          <img src="{{ url_for('static', filename='logo.png') }}" alt="Pharma Assistant logo" class="logo">
+        </div>
+        <span class="logo-tag">AI</span>
+      </div>
+      <div>
+        <h1>{{ app_name }}</h1>
+        <p>Clinical Intelligence and Drug Interaction Analysis System</p>
+      </div>
+    </header>
+
+    {% if not db_ready %}
+    <section class="alert card">
+      <h2>Database Error</h2>
+      <p>`drugs.json` was not found or is invalid. Add it to the app root and refresh.</p>
+    </section>
+    {% endif %}
+
+    <section class="layout">
+      <section class="card form-panel">
+        <h2>Patient Details</h2>
+        <form id="analysis-form">
+          <div class="field-grid">
+            <label>
+              Patient ID
+              <input type="text" name="patient_id" required>
+            </label>
+            <label>
+              Patient Name
+              <input type="text" name="patient_name" required>
+            </label>
+            <label>
+              Age
+              <input type="number" name="age" min="0" max="120" value="40" required>
+            </label>
+            <label>
+              Weight (kg)
+              <input type="number" name="weight" min="1" max="300" value="70" step="0.1" required>
+            </label>
+          </div>
+
+          <fieldset>
+            <legend>Known Allergies</legend>
+            <div class="chips">
+              {% for allergy in allergy_options %}
+              <label class="chip">
+                <input type="checkbox" name="allergies" value="{{ allergy }}">
+                <span>{{ allergy }}</span>
+              </label>
+              {% endfor %}
+            </div>
+          </fieldset>
+
+          <div class="medication-header">
+            <h3>Medication Regimen</h3>
+            <label>
+              Number of medications
+              <input id="med-count" type="number" min="2" max="8" value="2">
+            </label>
+          </div>
+
+          <div id="medication-inputs" class="medication-list"></div>
+
+          <button type="submit" {% if not db_ready %}disabled{% endif %}>Run Clinical Analysis</button>
+          <p id="status-msg" class="status"></p>
+        </form>
+      </section>
+
+      <section class="card output-panel">
+        <h2>Clinical Decision Support Output</h2>
+        <article id="report" class="report empty">
+          <p>No report yet. Submit patient and medication data to generate analysis.</p>
+        </article>
+        <button id="print-btn" type="button" class="secondary" disabled>Print Medical Report</button>
+      </section>
+    </section>
+
+    <footer>
+      <small>2026 {{ app_name }} | Developed by Ahmed Gad | Horus University AI Student Community</small>
+    </footer>
+  </main>
+
+  <script>
+    window.PHARMA_DATA = {
+      drugNames: {{ drug_names | tojson }}
+    };
+  </script>
+  <script src="{{ url_for('static', filename='js/app.js') }}"></script>
+</body>
+</html>

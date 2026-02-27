@@ -1,0 +1,362 @@
+2026-02-27 01:58:10,939 INFO Loaded medication database (23 entries)
+2026-02-27 02:12:01,679 INFO Loaded medication database (23 entries)
+2026-02-27 02:12:01,962 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-02-27 02:12:01,963 INFO [33mPress CTRL+C to quit[0m
+2026-02-27 02:12:01,989 INFO  * Restarting with watchdog (windowsapi)
+2026-02-27 02:12:02,342 INFO Loaded medication database (23 entries)
+2026-02-27 02:12:02,368 WARNING  * Debugger is active!
+2026-02-27 02:12:02,370 INFO  * Debugger PIN: 756-413-474
+2026-02-27 02:12:56,542 INFO Loaded medication database (23 entries)
+2026-02-27 02:12:56,543 INFO Loaded medication database (23 entries)
+2026-02-27 02:13:02,488 INFO Loaded medication database (23 entries)
+2026-02-27 02:13:07,640 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 500 Internal Server Error"
+2026-02-27 02:13:07,641 ERROR LLM query failed: model requires more system memory (5.2 GiB) than is available (3.6 GiB) (status code: 500)
+Traceback (most recent call last):
+  File "C:\Users\Computec\OneDrive\Desktop\pharmashield\app.py", line 65, in query_llm
+    response = ollama.chat(
+        model=model,
+        messages=[{"role": "user", "content": prompt}],
+        options={"temperature": temperature, "num_predict": 240, "num_thread": 8},
+    )
+  File "C:\Users\Computec\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\ollama\_client.py", line 365, in chat
+    return self._request(
+           ~~~~~~~~~~~~~^
+      ChatResponse,
+      ^^^^^^^^^^^^^
+    ...<14 lines>...
+      stream=stream,
+      ^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Computec\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\ollama\_client.py", line 189, in _request
+    return cls(**self._request_raw(*args, **kwargs).json())
+                 ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Computec\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\ollama\_client.py", line 133, in _request_raw
+    raise ResponseError(e.response.text, e.response.status_code) from None
+ollama._types.ResponseError: model requires more system memory (5.2 GiB) than is available (3.6 GiB) (status code: 500)
+2026-02-27 02:13:25,142 INFO  * Detected change in 'C:\\Users\\Computec\\OneDrive\\Desktop\\pharmashield\\app.py', reloading
+2026-02-27 02:13:25,240 INFO  * Restarting with watchdog (windowsapi)
+2026-02-27 02:13:25,730 INFO Loaded medication database (23 entries)
+2026-02-27 02:13:25,767 WARNING  * Debugger is active!
+2026-02-27 02:13:25,774 INFO  * Debugger PIN: 756-413-474
+2026-02-27 02:13:26,475 INFO  * Detected change in 'C:\\Users\\Computec\\OneDrive\\Desktop\\pharmashield\\app.py', reloading
+2026-02-27 02:13:26,582 INFO  * Restarting with watchdog (windowsapi)
+2026-02-27 02:13:26,939 INFO Loaded medication database (23 entries)
+2026-02-27 02:13:26,975 WARNING  * Debugger is active!
+2026-02-27 02:13:26,978 INFO  * Debugger PIN: 756-413-474
+2026-02-27 02:13:31,470 INFO Loaded medication database (23 entries)
+2026-02-27 02:13:34,797 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 500 Internal Server Error"
+2026-02-27 02:13:34,804 INFO HTTP Request: GET http://127.0.0.1:11434/api/tags "HTTP/1.1 200 OK"
+2026-02-27 02:13:34,805 ERROR LLM query failed: model requires more system memory (5.2 GiB) than is available (3.6 GiB) (status code: 500)
+Traceback (most recent call last):
+  File "C:\Users\Computec\OneDrive\Desktop\pharmashield\app.py", line 90, in query_llm
+    response = _run_chat(model)
+  File "C:\Users\Computec\OneDrive\Desktop\pharmashield\app.py", line 83, in _run_chat
+    return ollama.chat(
+           ~~~~~~~~~~~^
+        model=target_model,
+        ^^^^^^^^^^^^^^^^^^^
+        messages=[{"role": "user", "content": prompt}],
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        options={"temperature": temperature, "num_predict": 220, "num_thread": 2},
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Computec\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\ollama\_client.py", line 365, in chat
+    return self._request(
+           ~~~~~~~~~~~~~^
+      ChatResponse,
+      ^^^^^^^^^^^^^
+    ...<14 lines>...
+      stream=stream,
+      ^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Computec\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\ollama\_client.py", line 189, in _request
+    return cls(**self._request_raw(*args, **kwargs).json())
+                 ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Computec\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\ollama\_client.py", line 133, in _request_raw
+    raise ResponseError(e.response.text, e.response.status_code) from None
+ollama._types.ResponseError: model requires more system memory (5.2 GiB) than is available (3.6 GiB) (status code: 500)
+2026-02-27 02:13:52,018 INFO  * Detected change in 'C:\\Users\\Computec\\OneDrive\\Desktop\\pharmashield\\app.py', reloading
+2026-02-27 02:13:52,102 INFO  * Restarting with watchdog (windowsapi)
+2026-02-27 02:13:52,521 INFO Loaded medication database (23 entries)
+2026-02-27 02:13:52,547 WARNING  * Debugger is active!
+2026-02-27 02:13:52,549 INFO  * Debugger PIN: 756-413-474
+2026-02-27 02:13:54,582 INFO  * Detected change in 'C:\\Users\\Computec\\OneDrive\\Desktop\\pharmashield\\app.py', reloading
+2026-02-27 02:13:54,687 INFO  * Restarting with watchdog (windowsapi)
+2026-02-27 02:13:55,089 INFO Loaded medication database (23 entries)
+2026-02-27 02:13:55,116 WARNING  * Debugger is active!
+2026-02-27 02:13:55,119 INFO  * Debugger PIN: 756-413-474
+2026-02-27 02:13:58,096 INFO Loaded medication database (23 entries)
+2026-02-27 02:14:01,487 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 500 Internal Server Error"
+2026-02-27 02:14:01,491 INFO HTTP Request: GET http://127.0.0.1:11434/api/tags "HTTP/1.1 200 OK"
+2026-02-27 02:14:01,492 ERROR LLM query failed: model requires more system memory (5.2 GiB) than is available (3.5 GiB) (status code: 500)
+Traceback (most recent call last):
+  File "C:\Users\Computec\OneDrive\Desktop\pharmashield\app.py", line 162, in query_llm
+    response = _run_chat(model)
+  File "C:\Users\Computec\OneDrive\Desktop\pharmashield\app.py", line 155, in _run_chat
+    return ollama.chat(
+           ~~~~~~~~~~~^
+        model=target_model,
+        ^^^^^^^^^^^^^^^^^^^
+        messages=[{"role": "user", "content": prompt}],
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        options={"temperature": temperature, "num_predict": 220, "num_thread": 2},
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Computec\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\ollama\_client.py", line 365, in chat
+    return self._request(
+           ~~~~~~~~~~~~~^
+      ChatResponse,
+      ^^^^^^^^^^^^^
+    ...<14 lines>...
+      stream=stream,
+      ^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Computec\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\ollama\_client.py", line 189, in _request
+    return cls(**self._request_raw(*args, **kwargs).json())
+                 ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Computec\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\ollama\_client.py", line 133, in _request_raw
+    raise ResponseError(e.response.text, e.response.status_code) from None
+ollama._types.ResponseError: model requires more system memory (5.2 GiB) than is available (3.5 GiB) (status code: 500)
+2026-02-27 02:14:01,496 WARNING LLM unavailable. Returning rules-based fallback report. Reason: LLM query failed: model requires more system memory (5.2 GiB) than is available (3.5 GiB) (status code: 500)
+2026-02-27 02:14:13,275 INFO Loaded medication database (23 entries)
+2026-02-27 02:14:13,310 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-02-27 02:14:13,310 INFO [33mPress CTRL+C to quit[0m
+2026-02-27 02:14:13,322 INFO  * Restarting with watchdog (windowsapi)
+2026-02-27 02:14:13,716 INFO Loaded medication database (23 entries)
+2026-02-27 02:14:13,738 WARNING  * Debugger is active!
+2026-02-27 02:14:13,742 INFO  * Debugger PIN: 756-413-474
+2026-02-27 02:14:28,229 INFO  * Detected change in 'C:\\Users\\Computec\\OneDrive\\Desktop\\pharmashield\\app.py', reloading
+2026-02-27 02:14:28,230 INFO  * Detected change in 'C:\\Users\\Computec\\OneDrive\\Desktop\\pharmashield\\app.py', reloading
+2026-02-27 02:14:28,334 INFO  * Restarting with watchdog (windowsapi)
+2026-02-27 02:14:28,349 INFO  * Restarting with watchdog (windowsapi)
+2026-02-27 02:14:28,746 INFO Loaded medication database (23 entries)
+2026-02-27 02:14:28,758 INFO Loaded medication database (23 entries)
+2026-02-27 02:14:28,779 WARNING  * Debugger is active!
+2026-02-27 02:14:28,782 INFO  * Debugger PIN: 756-413-474
+2026-02-27 02:14:28,791 WARNING  * Debugger is active!
+2026-02-27 02:14:28,794 INFO  * Debugger PIN: 756-413-474
+2026-02-27 02:14:29,716 INFO Loaded medication database (23 entries)
+2026-02-27 02:14:29,762 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-02-27 02:14:29,763 INFO [33mPress CTRL+C to quit[0m
+2026-02-27 02:14:29,778 INFO  * Restarting with watchdog (windowsapi)
+2026-02-27 02:14:30,146 INFO Loaded medication database (23 entries)
+2026-02-27 02:14:30,168 WARNING  * Debugger is active!
+2026-02-27 02:14:30,171 INFO  * Debugger PIN: 756-413-474
+2026-02-27 02:15:11,293 INFO Loaded medication database (23 entries)
+2026-02-27 02:15:11,335 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-02-27 02:15:11,335 INFO [33mPress CTRL+C to quit[0m
+2026-02-27 02:15:11,348 INFO  * Restarting with watchdog (windowsapi)
+2026-02-27 02:15:11,661 INFO Loaded medication database (23 entries)
+2026-02-27 02:15:11,686 WARNING  * Debugger is active!
+2026-02-27 02:15:11,689 INFO  * Debugger PIN: 756-413-474
+2026-02-27 02:15:47,945 INFO 127.0.0.1 - - [27/Feb/2026 02:15:47] "GET / HTTP/1.1" 200 -
+2026-02-27 02:15:48,202 INFO 127.0.0.1 - - [27/Feb/2026 02:15:48] "GET /static/css/styles.css HTTP/1.1" 200 -
+2026-02-27 02:15:48,203 INFO 127.0.0.1 - - [27/Feb/2026 02:15:48] "GET /static/js/app.js HTTP/1.1" 200 -
+2026-02-27 02:15:48,206 INFO 127.0.0.1 - - [27/Feb/2026 02:15:48] "GET /static/logo.png HTTP/1.1" 200 -
+2026-02-27 02:15:48,406 INFO 127.0.0.1 - - [27/Feb/2026 02:15:48] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-02-27 02:16:58,022 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 500 Internal Server Error"
+2026-02-27 02:16:58,030 INFO HTTP Request: GET http://127.0.0.1:11434/api/tags "HTTP/1.1 200 OK"
+2026-02-27 02:16:58,032 ERROR LLM query failed: model requires more system memory (5.2 GiB) than is available (2.5 GiB) (status code: 500)
+Traceback (most recent call last):
+  File "C:\Users\Computec\OneDrive\Desktop\pharmashield\app.py", line 162, in query_llm
+    response = _run_chat(model)
+  File "C:\Users\Computec\OneDrive\Desktop\pharmashield\app.py", line 155, in _run_chat
+    return ollama.chat(
+           ~~~~~~~~~~~^
+        model=target_model,
+        ^^^^^^^^^^^^^^^^^^^
+        messages=[{"role": "user", "content": prompt}],
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        options={"temperature": temperature, "num_predict": 220, "num_thread": 2},
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Computec\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\ollama\_client.py", line 365, in chat
+    return self._request(
+           ~~~~~~~~~~~~~^
+      ChatResponse,
+      ^^^^^^^^^^^^^
+    ...<14 lines>...
+      stream=stream,
+      ^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Computec\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\ollama\_client.py", line 189, in _request
+    return cls(**self._request_raw(*args, **kwargs).json())
+                 ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Computec\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\ollama\_client.py", line 133, in _request_raw
+    raise ResponseError(e.response.text, e.response.status_code) from None
+ollama._types.ResponseError: model requires more system memory (5.2 GiB) than is available (2.5 GiB) (status code: 500)
+2026-02-27 02:16:58,042 WARNING LLM unavailable. Returning rules-based fallback report. Reason: LLM query failed: model requires more system memory (5.2 GiB) than is available (2.5 GiB) (status code: 500)
+2026-02-27 02:16:58,044 INFO 127.0.0.1 - - [27/Feb/2026 02:16:58] "POST /api/analyze HTTP/1.1" 200 -
+2026-02-27 02:18:07,493 INFO Loaded medication database (23 entries)
+2026-02-27 02:18:27,730 INFO 127.0.0.1 - - [27/Feb/2026 02:18:27] "GET / HTTP/1.1" 200 -
+2026-02-27 02:18:27,754 INFO 127.0.0.1 - - [27/Feb/2026 02:18:27] "GET /static/css/styles.css HTTP/1.1" 200 -
+2026-02-27 02:18:27,759 INFO 127.0.0.1 - - [27/Feb/2026 02:18:27] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2026-02-27 02:18:27,763 INFO 127.0.0.1 - - [27/Feb/2026 02:18:27] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2026-02-27 02:18:29,092 INFO 127.0.0.1 - - [27/Feb/2026 02:18:29] "GET / HTTP/1.1" 200 -
+2026-02-27 02:18:29,123 INFO 127.0.0.1 - - [27/Feb/2026 02:18:29] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2026-02-27 02:18:29,126 INFO 127.0.0.1 - - [27/Feb/2026 02:18:29] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2026-02-27 02:18:29,127 INFO 127.0.0.1 - - [27/Feb/2026 02:18:29] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2026-02-27 02:23:11,366 INFO  * Detected change in 'C:\\Users\\Computec\\OneDrive\\Desktop\\pharmashield\\app.py', reloading
+2026-02-27 02:23:11,367 INFO  * Detected change in 'C:\\Users\\Computec\\OneDrive\\Desktop\\pharmashield\\app.py', reloading
+2026-02-27 02:23:11,367 INFO  * Detected change in 'C:\\Users\\Computec\\OneDrive\\Desktop\\pharmashield\\app.py', reloading
+2026-02-27 02:23:11,368 INFO  * Detected change in 'C:\\Users\\Computec\\OneDrive\\Desktop\\pharmashield\\app.py', reloading
+2026-02-27 02:23:11,368 INFO  * Detected change in 'C:\\Users\\Computec\\OneDrive\\Desktop\\pharmashield\\app.py', reloading
+2026-02-27 02:23:11,556 INFO  * Restarting with watchdog (windowsapi)
+2026-02-27 02:23:11,601 INFO  * Restarting with watchdog (windowsapi)
+2026-02-27 02:23:11,997 INFO Loaded medication database (23 entries)
+2026-02-27 02:23:11,998 INFO Starting PharmaShield with Flask dev server on 0.0.0.0:5000
+2026-02-27 02:23:11,998 INFO Starting PharmaShield with Flask dev server on 0.0.0.0:5000
+2026-02-27 02:23:12,024 INFO Loaded medication database (23 entries)
+2026-02-27 02:23:12,025 INFO Starting PharmaShield with Flask dev server on 0.0.0.0:5000
+2026-02-27 02:23:38,542 INFO Loaded medication database (23 entries)
+2026-02-27 02:23:38,637 INFO Starting PharmaShield with waitress on 0.0.0.0:5000
+2026-02-27 02:23:38,644 INFO Serving on http://0.0.0.0:5000
+2026-02-27 02:35:09,347 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 500 Internal Server Error"
+2026-02-27 02:35:09,354 INFO HTTP Request: GET http://127.0.0.1:11434/api/tags "HTTP/1.1 200 OK"
+2026-02-27 02:35:09,356 ERROR LLM query failed: model requires more system memory (5.2 GiB) than is available (5.0 GiB) (status code: 500)
+Traceback (most recent call last):
+  File "C:\Users\Computec\OneDrive\Desktop\pharmashield\app.py", line 162, in query_llm
+    response = _run_chat(model)
+  File "C:\Users\Computec\OneDrive\Desktop\pharmashield\app.py", line 155, in _run_chat
+    return ollama.chat(
+           ~~~~~~~~~~~^
+        model=target_model,
+        ^^^^^^^^^^^^^^^^^^^
+        messages=[{"role": "user", "content": prompt}],
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        options={"temperature": temperature, "num_predict": 220, "num_thread": 2},
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Computec\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\ollama\_client.py", line 365, in chat
+    return self._request(
+           ~~~~~~~~~~~~~^
+      ChatResponse,
+      ^^^^^^^^^^^^^
+    ...<14 lines>...
+      stream=stream,
+      ^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Computec\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\ollama\_client.py", line 189, in _request
+    return cls(**self._request_raw(*args, **kwargs).json())
+                 ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Computec\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\ollama\_client.py", line 133, in _request_raw
+    raise ResponseError(e.response.text, e.response.status_code) from None
+ollama._types.ResponseError: model requires more system memory (5.2 GiB) than is available (5.0 GiB) (status code: 500)
+2026-02-27 02:35:09,365 WARNING LLM unavailable. Returning rules-based fallback report. Reason: LLM query failed: model requires more system memory (5.2 GiB) than is available (5.0 GiB) (status code: 500)
+2026-02-27 18:47:18,742 INFO Loaded medication database (23 entries)
+2026-02-27 18:47:18,969 INFO Starting PharmaShield with waitress on 0.0.0.0:5000
+2026-02-27 18:47:18,976 INFO Serving on http://0.0.0.0:5000
+2026-02-27 18:47:47,841 INFO Loaded medication database (23 entries)
+2026-02-27 18:49:14,036 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 500 Internal Server Error"
+2026-02-27 18:49:14,045 INFO HTTP Request: GET http://127.0.0.1:11434/api/tags "HTTP/1.1 200 OK"
+2026-02-27 18:49:14,047 ERROR LLM query failed: model requires more system memory (6.4 GiB) than is available (5.5 GiB) (status code: 500)
+Traceback (most recent call last):
+  File "C:\Users\Computec\OneDrive\Desktop\pharmashield\app.py", line 211, in query_llm
+    response = _run_chat(model)
+  File "C:\Users\Computec\OneDrive\Desktop\pharmashield\app.py", line 204, in _run_chat
+    return ollama.chat(
+           ~~~~~~~~~~~^
+        model=target_model,
+        ^^^^^^^^^^^^^^^^^^^
+        messages=[{"role": "user", "content": prompt}],
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        options={"temperature": temperature, "num_predict": 220, "num_thread": 2},
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Computec\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\ollama\_client.py", line 365, in chat
+    return self._request(
+           ~~~~~~~~~~~~~^
+      ChatResponse,
+      ^^^^^^^^^^^^^
+    ...<14 lines>...
+      stream=stream,
+      ^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Computec\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\ollama\_client.py", line 189, in _request
+    return cls(**self._request_raw(*args, **kwargs).json())
+                 ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Computec\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\ollama\_client.py", line 133, in _request_raw
+    raise ResponseError(e.response.text, e.response.status_code) from None
+ollama._types.ResponseError: model requires more system memory (6.4 GiB) than is available (5.5 GiB) (status code: 500)
+2026-02-27 18:49:14,057 WARNING LLM unavailable. Returning rules-based fallback report. Reason: LLM query failed: model requires more system memory (6.4 GiB) than is available (5.5 GiB) (status code: 500)
+2026-02-27 18:58:08,478 INFO Loaded medication database (23 entries)
+2026-02-27 18:58:08,684 INFO Starting Pharma Assistant with waitress on 0.0.0.0:5000
+2026-02-27 18:58:08,691 INFO Serving on http://0.0.0.0:5000
+2026-02-27 18:58:44,178 INFO Loaded medication database (23 entries)
+2026-02-27 18:58:44,263 INFO Starting Pharma Assistant with waitress on 0.0.0.0:5000
+2026-02-27 18:58:44,267 INFO Serving on http://0.0.0.0:5000
+2026-02-27 19:01:45,315 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 500 Internal Server Error"
+2026-02-27 19:01:45,321 INFO HTTP Request: GET http://127.0.0.1:11434/api/tags "HTTP/1.1 200 OK"
+2026-02-27 19:01:45,322 ERROR LLM query failed: model requires more system memory (5.2 GiB) than is available (4.2 GiB) (status code: 500)
+Traceback (most recent call last):
+  File "C:\Users\Computec\OneDrive\Desktop\pharmashield\app.py", line 211, in query_llm
+    raise RuntimeError("Local LLM 'ollama' is not available in the environment.")
+               ^^^^^^^^^^^^^^^^
+  File "C:\Users\Computec\OneDrive\Desktop\pharmashield\app.py", line 204, in _run_chat
+    
+    
+    ...<3 lines>...
+            import ollama
+            ^
+  File "C:\Users\Computec\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\ollama\_client.py", line 365, in chat
+    return self._request(
+           ~~~~~~~~~~~~~^
+      ChatResponse,
+      ^^^^^^^^^^^^^
+    ...<14 lines>...
+      stream=stream,
+      ^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Computec\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\ollama\_client.py", line 189, in _request
+    return cls(**self._request_raw(*args, **kwargs).json())
+                 ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Computec\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\ollama\_client.py", line 133, in _request_raw
+    raise ResponseError(e.response.text, e.response.status_code) from None
+ollama._types.ResponseError: model requires more system memory (5.2 GiB) than is available (4.2 GiB) (status code: 500)
+2026-02-27 19:01:45,327 WARNING LLM unavailable. Returning rules-based fallback report. Reason: LLM query failed: model requires more system memory (5.2 GiB) than is available (4.2 GiB) (status code: 500)
+2026-02-27 19:01:47,728 INFO HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 500 Internal Server Error"
+2026-02-27 19:01:47,733 INFO HTTP Request: GET http://127.0.0.1:11434/api/tags "HTTP/1.1 200 OK"
+2026-02-27 19:01:47,734 ERROR LLM query failed: model requires more system memory (5.2 GiB) than is available (4.2 GiB) (status code: 500)
+Traceback (most recent call last):
+  File "C:\Users\Computec\OneDrive\Desktop\pharmashield\app.py", line 211, in query_llm
+    raise RuntimeError("Local LLM 'ollama' is not available in the environment.")
+               ^^^^^^^^^^^^^^^^
+  File "C:\Users\Computec\OneDrive\Desktop\pharmashield\app.py", line 204, in _run_chat
+    
+    
+    ...<3 lines>...
+            import ollama
+            ^
+  File "C:\Users\Computec\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\ollama\_client.py", line 365, in chat
+    return self._request(
+           ~~~~~~~~~~~~~^
+      ChatResponse,
+      ^^^^^^^^^^^^^
+    ...<14 lines>...
+      stream=stream,
+      ^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Computec\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\ollama\_client.py", line 189, in _request
+    return cls(**self._request_raw(*args, **kwargs).json())
+                 ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Computec\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\ollama\_client.py", line 133, in _request_raw
+    raise ResponseError(e.response.text, e.response.status_code) from None
+ollama._types.ResponseError: model requires more system memory (5.2 GiB) than is available (4.2 GiB) (status code: 500)
+2026-02-27 19:01:47,738 WARNING LLM unavailable. Returning rules-based fallback report. Reason: LLM query failed: model requires more system memory (5.2 GiB) than is available (4.2 GiB) (status code: 500)
